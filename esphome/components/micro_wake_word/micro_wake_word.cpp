@@ -54,7 +54,7 @@ static const LogString *micro_wake_word_state_to_string(State state) {
 }
 
 void MicroWakeWord::dump_config() {
-  ESP_LOGCONFIG(TAG, "microWakeWord:");
+  ESP_LOGCONFIG(TAG, "microWakeWord (debug version):");
   ESP_LOGCONFIG(TAG, "  Wake Word: %s", this->get_wake_word().c_str());
   ESP_LOGCONFIG(TAG, "  Probability cutoff: %.3f", this->probability_cutoff_);
   ESP_LOGCONFIG(TAG, "  Sliding window size: %d", this->sliding_window_average_size_);
